@@ -1,0 +1,238 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result {
+  font-size: 20px;
+  color: aqua;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "HankenGroteskExtrabold";
+  src: url("assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "HankenGroteskBold";
+  src: url("assets/fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "HankenGroteskMedium";
+  src: url("assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+
+.container {
+  box-shadow: 20px 50px 100px 0px rgba(84, 84, 84, 0.2);
+  border-radius: 30px;
+}
+
+.card-2 h1 {
+  margin-bottom: 10px;
+  font-family: "HankenGroteskMedium", sans-serif;
+  font-size: 25px;
+}
+
+.card-2 {
+  font-family: "HankenGroteskMedium", sans-serif;
+}
+
+.card-1 {
+  color: white;
+  background-image: linear-gradient(
+    to top,
+    rgb(52, 116, 219) 30%,
+    /* Lighter blue color (e.g., LightSkyBlue) */ rgb(73, 73, 186) 70%
+      /* Darker blue color */
+  );
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 30px 50px;
+  background-color: rgb(105, 88, 218);
+  text-align: center;
+  border-radius: 100%;
+}
+
+.card-1 p {
+  color: aqua;
+  font-weight: 500;
+  width: 70%;
+  text-align: center;
+  font-family: "HankenGroteskMeduim", sans-serif;
+}
+
+#max-score {
+  color: rgb(145, 131, 228);
+}
+
+#great {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.card-1 h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "HankenGroteskExtrabold", sans-serif;
+  font-size: 50px;
+}
+
+.card-1 span {
+  font-family: "HankenGroteskMedium", sans-serif;
+  font-weight: 800;
+}
+
+.card-2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-text img {
+  margin-right: 5px;
+}
+
+.icon-reaction {
+  color: red;
+}
+
+.icon-memory {
+  color: rgb(190, 190, 2);
+}
+
+.icon-verbal {
+  color: rgb(119, 181, 119);
+}
+
+.icon-visual {
+  color: blue;
+}
+
+@keyframes hoverBtn {
+  from {
+    background-color: black;
+    font-family: "HankenGroteskMedium", sans-serif;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  to {
+    background-color: white;
+    font-family: "HankenGroteskMedium", sans-serif;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+
+button {
+  background-color: black;
+  font-family: "HankenGroteskMedium", sans-serif;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+button:hover {
+  animation: hoverBtn 0.2s forwards;
+}
+
+.stat {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-1 {
+  background-color: rgb(240, 230, 230);
+}
+
+.stat-2 {
+  background-color: rgb(240, 240, 230);
+}
+
+.stat-3 {
+  background-color: rgb(230, 240, 232);
+}
+
+.stat-4 {
+  background-color: rgb(230, 231, 240);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .card-1 {
+    height: 100%;
+    width: 50%;
+  }
+  .card-2 {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.card-1,
+.card-2 {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: scroll;
+    overflow: auto;
+  }
+}
